@@ -1,0 +1,51 @@
+### Create new user
+POST http://localhost:3000/auth/signup
+content-type: application/json
+
+{
+  "email": "admin@gmail.com",
+  "password": "admin.123"
+}
+
+
+### Login user
+POST http://localhost:3000/auth/login
+content-type: application/json
+
+{
+  "email": "admin@gmail.com",
+  "password": "admin.123"
+}
+
+### Get user profile
+GET http://localhost:3000/auth/whoami
+
+
+### Logout user
+POST http://localhost:3000/auth/logout
+
+
+### Find One User Using Id
+GET http://localhost:3000/auth/4
+content-type: application/json
+
+
+
+### Find All Users using email
+GET http://localhost:3000/auth?email=abdo@gmail.com
+content-type: application/json
+
+
+### Delete User
+DELETE http://localhost:3000/auth/2
+content-type: application/json
+
+### Update User
+PATCH http://localhost:3000/auth/4
+content-type: application/json
+
+{
+  "email": "abdaullah@yahoo.com",
+  "password": "abdallah.123"
+}
+
